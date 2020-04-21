@@ -1,0 +1,42 @@
+
+
+<div style="width:100%;text-align:center; margin:auto">
+Click the PAY NOW button below to proceed with payment
+
+<br>
+
+<br>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+<script>console.log('{{config.merchant_code}}' );</script>
+<a data-isw-payment-button data-isw-ref='{{config.merchant_code}}'  >
+  <script type='text/javascript'
+    src='{{config.gateway_script}}'
+
+  data-isw-transactionReference='{{config.transactionReference}}'
+  data-isw-merchantCode='{{config.merchant_code}}'  
+  data-isw-currencyCode='{{config.currency_code}}'
+  data-isw-amount='{{config.total_amount}}'
+  data-isw-dateOfPayment= '{{config.dateOfPayment}}'
+  data-isw-orderId='{{config.orderId}}'
+  data-isw-terminalId='{{config.terminal_id}}'
+  data-isw-customerInfor='{{config.customerInfor}}'
+  data-isw-redirectUrl='{{config.notify_url}}'
+  data-isw-domain='{{config.domain}}'
+  data-isw-narration='{{config.narration}}'
+  data-isw-fee='{{config.fee}}'
+  data-isw-preauth='{{config.preauth}}'
+  data_isw_icon_url='{{config.icon_url}}'
+          >
+          </script>
+ </a>
+ </div>
+<script>
+
+
+ 
+</script>
